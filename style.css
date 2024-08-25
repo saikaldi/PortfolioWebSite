@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fixed Background with Overlay */
+.background {
+    background: url('/images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark transparent overlay */
+    z-index: -1;
+}
+
+/* Hero Section */
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    padding: 10px 30px;
+    font-size: 1.2em;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* White with 70% opacity */
+    color: #000000;
+}
+
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 100;
+	background-color: rgba(255, 255, 255, 0.9); /* White with 70% opacity */
+    color: #000000;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #898885;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Content Sections */
+section {
+    padding: 100px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent sections */
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+	color: #fff;
+}
+
+
+#about {
+    background-color: rgba(255, 255, 255, 0.1); /* Ensure background is transparent */
+}
+
+/* About Me Section */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.about-left {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #333; /* Optional: add border for emphasis */
+}
+
+.bio {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 15px;
+	color: white;
+}
+
+.about-right {
+	margin-top: 100px;
+    flex: 1;
+    padding-left: 40px;
+}
+
+.about-right h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Technology Progress Bars */
+.tech-skill {
+    margin-bottom: 20px;
+}
+
+.tech-skill label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+
+label{
+	color: white;
+}
+
+
+
+#projects {
+    background-color: transparent /* Ensure background is transparent */
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.card {
+    width: 100%;
+    max-width: 450px; /* Adjust as needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+	color: #000000;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+	color: #000000;
+}
+.tech{
+	font-weight: bold;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px; /* Fixed height for the images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.card-content {
+    padding: 15px;
+    background-color: #fff; /* Ensures background is white */
+}
+
+.card-content p {
+    margin: 0 0 10px;
+}
+
+.view-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: transparent;
+	border: 1px solid #000000;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.view-btn:hover {
+    background-color: #C59F4B; /* White with 70% opacity */
+}
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+	
+    background-color: transparent; /* Ensure background is transparent */
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-links a img.social-icon {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover img.social-icon {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 20px 0;
+}
+
+
+
+
