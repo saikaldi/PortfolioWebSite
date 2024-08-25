@@ -16,7 +16,7 @@ h1, h2 {
 
 /* Fixed Background with Overlay */
 .background {
-    background: url('/images/bg.jpg') no-repeat center center fixed;
+    /* background: url('/images/bg.jpg') no-repeat center center fixed; */
     background-size: cover;
     position: fixed;
     top: 0;
