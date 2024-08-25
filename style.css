@@ -306,3 +306,71 @@ footer {
 
 
 
+/* Responsive Media Queries */
+
+/* Tablets and Small Screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .about-left, .about-right {
+        flex: none;
+        padding: 0;
+    }
+
+    .about-right {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-button {
+        font-size: 1em;
+        padding: 8px 20px;
+    }
+
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero-button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+    }
+
+    .project-cards {
+        gap: 10px;
+    }
+
+    .card-image {
+        height: 150px;
+    }
+}
